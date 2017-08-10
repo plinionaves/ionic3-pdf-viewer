@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>PDF Viewer</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="onClose()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <pdf-viewer [src]="displayData.pdfSource" 
+              [show-all]="true"
+              [original-size]="false"
+              [zoom]="1.0" 
+              style="display: block"
+  ></pdf-viewer>
+
+</ion-content>

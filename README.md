@@ -1,26 +1,26 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+Abrir PDF com Ionic 3
 
-## How to use this template
+## Para executar em sua máquina
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
-
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+Abra um terminal e rode os comandos abaixo:
 
 ```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
+$ git clone git@github.com:plinionaves/ionic3-pdf-viewer.git
+$ cd ionic3-pdf-viewer
+$ npm install
+$ ionic serve
 ```
 
-Then, to run it, cd into `myBlank` and run:
+`Certifique-se de ter o Ionic CLI instalado`
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
+## Detalhes
 
-Substitute ios for android if not on a Mac.
+Esta aplicação utiliza o pacote [ng2-pdf-viewer](https://www.npmjs.com/package/ng2-pdf-viewer) desenvolvido por [Vadym Yatsyuk](https://github.com/VadimDez).
+
+Para mais detalhes e opções de uso, acesse:
+
+1. [Página no NPM](https://www.npmjs.com/package/ng2-pdf-viewer)
+2. [Repositório no Github](https://github.com/VadimDez/ng2-pdf-viewer)
+
+Clique aqui para ver uma [Live Demo](https://vadimdez.github.io/ng2-pdf-viewer/)
 

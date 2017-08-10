@@ -4,13 +4,18 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
-import { MyApp } from './app.component';
+import { PdfViewerComponent } from 'ng2-pdf-viewer';
+
 import { HomePage } from '../pages/home/home';
+import { MyApp } from './app.component';
+import { PdfViewerPage } from './../pages/pdf-viewer/pdf-viewer';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    PdfViewerComponent,
+    PdfViewerPage
   ],
   imports: [
     BrowserModule,
@@ -18,8 +23,9 @@ import { HomePage } from '../pages/home/home';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
+    HomePage,
     MyApp,
-    HomePage
+    PdfViewerPage
   ],
   providers: [
     StatusBar,
