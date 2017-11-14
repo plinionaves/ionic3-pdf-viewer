@@ -17,9 +17,7 @@ export class HomePage {
   onOpenPDF(): void {
     let modal: Modal = this.modalCtrl.create(PdfViewerPage, {
       displayData: {
-        pdfSource: {
-          url: 'https://vadimdez.github.io/ng2-pdf-viewer/pdf-test.pdf'
-        }
+        pdfSource: 'https://vadimdez.github.io/ng2-pdf-viewer/pdf-test.pdf'
       }
     });
     modal.present();
